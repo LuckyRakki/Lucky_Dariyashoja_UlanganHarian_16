@@ -21,14 +21,16 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
-# Abaikan semua controller kecuali BookController.php
+# Abaikan semua controller kecuali ReviewController.php
 app/Http/Controllers/*
-!app/Http/Controllers/LoanController.php
+!app/Http/Controllers/ReviewController.php
 
-# Abaikan semua model kecuali Book.php
+# Abaikan semua model kecuali Review.php
 app/Models/*
-!app/Models/Loan.php
+!app/Models/Review.php
 
-# Abaikan semua migration kecuali yang terkait Book
+# Abaikan semua migration kecuali yang terkait Review
 database/migrations/*
-!database/migrations/2025_02_17_074927_create_loans_table.php
+!database/migrations/2025_02_10_061529_create_reviews_table.php
+
+

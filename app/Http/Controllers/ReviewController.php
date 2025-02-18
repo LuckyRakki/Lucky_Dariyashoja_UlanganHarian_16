@@ -21,7 +21,8 @@ class ReviewController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-        'name' => 'required|string|max:255',
+        'book_id' => 'required|string|max:255',
+        'user_id' => 'required|string|max:255',
         'rating' => 'required|integer|min:1|max:5',
         'comment' => 'required|string|max:1000'
     ]);
@@ -66,7 +67,8 @@ public function update(Request $request, $id)
     }
 
     $request->validate([
-        'name' => 'required|string|max:255',
+        'book_id' => 'required|string|max:255',
+        'user_id' => 'required|string|max:255',
         'rating' => 'required|integer|min:1|max:5',
         'comment' => 'required|string|max:1000'
     ]);
