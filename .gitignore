@@ -23,12 +23,12 @@ yarn-error.log
 /.zed
 # Abaikan semua controller kecuali BookController.php
 app/Http/Controllers/*
-!app/Http/Controllers/BookController.php
+!app/Http/Controllers/LoanController.php
 
 # Abaikan semua model kecuali Book.php
 app/Models/*
-!app/Models/Book.php
+!app/Models/Loan.php
 
 # Abaikan semua migration kecuali yang terkait Book
 database/migrations/*
-!database/migrations/2025_02_17_074621_create_books_table.php
+!database/migrations/2025_02_17_074927_create_loans_table.php
